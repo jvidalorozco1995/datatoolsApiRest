@@ -11,7 +11,7 @@ import com.org.data.models.VehiculosDto;
 import com.org.data.repositories.EmpresasRepository;
 import com.org.data.repositories.VehiculosRepository;
 
-@Service(value = "VehiculosService")
+@Service
 public class VehiculosService implements IVehiculosService {
 
     @Autowired

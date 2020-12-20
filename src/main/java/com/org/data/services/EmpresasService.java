@@ -7,7 +7,7 @@ import com.org.data.models.BaseResponse;
 import com.org.data.models.EmpresasDto;
 import com.org.data.repositories.EmpresasRepository;
 
-@Service(value = "EmpresasService")
+@Service()
 public class EmpresasService implements IEmpresasService {
 
     @Autowired

@@ -11,7 +11,7 @@ import com.org.data.models.EmpresasDto;
 import com.org.data.repositories.ConductoresRepository;
 import com.org.data.repositories.EmpresasRepository;
 
-@Service(value = "ConductoresService")
+@Service
 public class ConductoresService implements IConductoresService {
 
     @Autowired
