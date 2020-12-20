@@ -7,9 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.org.data.models.BaseResponse;
 import com.org.data.models.ConductoresDto;
-import com.org.data.models.EmpresasDto;
 import com.org.data.repositories.ConductoresRepository;
-import com.org.data.repositories.EmpresasRepository;
 
 @Service
 public class ConductoresService implements IConductoresService {

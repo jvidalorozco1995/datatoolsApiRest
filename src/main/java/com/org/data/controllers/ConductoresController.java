@@ -20,12 +20,12 @@ import com.org.data.services.EmpresasService;
 public class ConductoresController {
 
 	@Autowired
-    private ConductoresService conductoresService;
+    public ConductoresService cservice;
 
     @GetMapping("")
     public List<ConductoresDto> getConductores() {
 
-        var lstEmpresas = (List<ConductoresDto>) conductoresService.findAll();
+        var lstEmpresas = (List<ConductoresDto>) cservice.findAll();
 
         return lstEmpresas;
     }
@@ -34,7 +34,7 @@ public class ConductoresController {
     public BaseResponse newConductor(@RequestBody ConductoresDto conductor) {
     	 BaseResponse response = new BaseResponse();
         if(conductor != null) {
-        	return conductoresService.create(conductor);
+        	return cservice.create(conductor);
         	
         } else {
         	
