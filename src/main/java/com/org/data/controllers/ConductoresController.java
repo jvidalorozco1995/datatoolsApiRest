@@ -25,7 +25,7 @@ public class ConductoresController {
     @GetMapping("")
     public List<ConductoresDto> getConductores() {
 
-        var lstEmpresas = (List<ConductoresDto>) cservice.findAll();
+    	List<ConductoresDto> lstEmpresas = (List<ConductoresDto>) cservice.findAll();
 
         return lstEmpresas;
     }

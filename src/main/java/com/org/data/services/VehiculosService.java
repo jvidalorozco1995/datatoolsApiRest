@@ -20,7 +20,7 @@ public class VehiculosService implements IVehiculosService {
     @Override
     public List<VehiculosDto> findAll() {
 
-        var cities = (List<VehiculosDto>) repository.findAll();
+    	List<VehiculosDto> cities = (List<VehiculosDto>) repository.findAll();
 
         return cities;
     }

@@ -25,7 +25,7 @@ public class EmpresasController {
     @GetMapping("")
     public List<EmpresasDto> getEmpresas() {
 
-        var lstEmpresas = (List<EmpresasDto>) empresasService.findAll();
+    	List<EmpresasDto> lstEmpresas = (List<EmpresasDto>) empresasService.findAll();
 
         return lstEmpresas;
     }

@@ -16,7 +16,7 @@ public class EmpresasService implements IEmpresasService {
     @Override
     public List<EmpresasDto> findAll() {
 
-        var cities = (List<EmpresasDto>) repository.findAll();
+    	List<EmpresasDto> cities = (List<EmpresasDto>) repository.findAll();
 
         return cities;
     }

@@ -18,7 +18,7 @@ public class ConductoresService implements IConductoresService {
     @Override
     public List<ConductoresDto> findAll() {
 
-        var cities = (List<ConductoresDto>) repository.findAll();
+    	 List<ConductoresDto> cities = (List<ConductoresDto>) repository.findAll();
 
         return cities;
     }

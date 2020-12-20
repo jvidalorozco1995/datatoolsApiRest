@@ -25,7 +25,7 @@ public class VehiculosController {
     @GetMapping("")
     public List<VehiculosDto> getVehiculos() {
 
-        var lstVehiculos = (List<VehiculosDto>) vehiculosService.findAll();
+    	List<VehiculosDto> lstVehiculos = (List<VehiculosDto>) vehiculosService.findAll();
 
         return lstVehiculos;
     }
