@@ -3,6 +3,7 @@ package com.org.data.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ import com.org.data.services.VehiculosService;
 
 @RestController()
 @RequestMapping("/api/vehiculos")
+@CrossOrigin
 public class VehiculosController {
 
 	@Autowired
