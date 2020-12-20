@@ -1,5 +1,7 @@
 package com.org.data.models;
 
+import java.util.UUID;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -90,7 +92,7 @@ public class VehiculosDto {
 	}
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private UUID id;
   private String placa;
   private String motor;
   private String chasis;
