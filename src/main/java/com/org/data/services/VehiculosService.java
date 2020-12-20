@@ -32,7 +32,7 @@ public class VehiculosService implements IVehiculosService {
 				
 			   repository.save(vehiculo);
 			   base.code = "1";
-			   base.message = "Guardado satisfactoriamente";
+			   base.message = "Guardado Satisfactoriamente";
 			   
 				
 			}catch(Exception ex) {
