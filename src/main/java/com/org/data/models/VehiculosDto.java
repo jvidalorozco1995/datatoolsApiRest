@@ -12,9 +12,7 @@ import javax.persistence.Table;
 @Table(name = "vehiculos")
 public class VehiculosDto {
 
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+
 
 public UUID getId() {
 		return id;
@@ -52,16 +50,16 @@ public UUID getId() {
 	public void setPasajeros(String pasajeros) {
 		this.pasajeros = pasajeros;
 	}
-	public int getCantsentados() {
+	public String getCantsentados() {
 		return cantsentados;
 	}
-	public void setCantsentados(int cantsentados) {
+	public void setCantsentados(String cantsentados) {
 		this.cantsentados = cantsentados;
 	}
-	public int getCantpies() {
+	public String getCantpies() {
 		return cantpies;
 	}
-	public void setCantpies(int cantpies) {
+	public void setCantpies(String cantpies) {
 		this.cantpies = cantpies;
 	}
 	public String getPesoseco() {
@@ -76,10 +74,10 @@ public UUID getId() {
 	public void setPesobruto(String pesobruto) {
 		this.pesobruto = pesobruto;
 	}
-	public int getCantpuertas() {
+	public String getCantpuertas() {
 		return cantpuertas;
 	}
-	public void setCantpuertas(int cantpuertas) {
+	public void setCantpuertas(String cantpuertas) {
 		this.cantpuertas = cantpuertas;
 	}
 	public String getMarca() {
@@ -106,19 +104,23 @@ public UUID getId() {
 	public void setPlaca(String placa) {
 		this.placa = placa;
 	}
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
+	  private String placa;
 private String motor;
   private String chasis;
   private String modelo;
   private String fechamatricula;
   private String pasajeros;
-  private int cantsentados;
-  private int cantpies;
+  private String cantsentados;
+  private String cantpies;
   private String pesoseco;
   private String pesobruto;
-  private int cantpuertas;
+  private String cantpuertas;
   private String marca;
   private String linea;
   private String idempresa;
-  private String placa;
+
 
 }
