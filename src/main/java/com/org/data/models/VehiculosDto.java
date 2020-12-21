@@ -106,12 +106,12 @@ public class VehiculosDto {
   private int cantPuertas;
   private String marca;
   private String linea;
-  private String idEmpresa;
+  private String idempresa;
   public String getIdEmpresa() {
-	return idEmpresa;
+	return idempresa;
 }
 public void setIdEmpresa(String idEmpresa) {
-	this.idEmpresa = idEmpresa;
+	this.idempresa = idEmpresa;
 }
 	
 }
