@@ -14,7 +14,7 @@ import com.org.data.models.VehiculosPorConductorDto;
 
 public interface VehiculosporConductorRepository extends Repository<VehiculosPorConductorDto, String> {
 
-	 @Query(value = "SELECT veco.id as id,veh.placa as placa,emp.tipo_documento as tipodocumento,emp.numero_documento as numerodocumento, emp.nombre as empresa,c.nombres as nombres FROM public.vehiculosporconductor veco INNER JOIN conductores c ON c.id = veco.idConductor INNER JOIN vehiculos veh ON veh.id = veco.idVehiculo INNER JOIN empresas emp ON  emp.id = CAST (idEmpresa AS UUID) WHERE veco.idVehiculo IN (SELECT idVehiculo FROM vehiculosporconductor GROUP BY idVehiculo HAVING COUNT(*)>1)", nativeQuery = true)
+	 @Query(value = "SELECT veco.id as id,veh.placa as placa,emp.tipo_documento as tipodocumento,emp.numero_documento as numerodocumento, emp.nombre as empresa,c.nombres as nombres FROM public.vehiculosporconductor veco INNER JOIN conductores c ON c.id = veco.idconductor INNER JOIN vehiculos veh ON veh.id = veco.idvehiculo INNER JOIN empresas emp ON  emp.id = CAST (idEmpresa AS UUID) WHERE veco.idvehiculo IN (SELECT idvehiculo FROM vehiculosporconductor GROUP BY idvehiculo HAVING COUNT(*)>1)", nativeQuery = true)
 		List<VehiculosPorConductorDto> obtenerVehiculosPorConductor();
 	 
 	 
