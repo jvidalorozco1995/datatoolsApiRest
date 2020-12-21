@@ -18,7 +18,7 @@ import com.org.data.services.IEmpresasService;
 
 @RestController()
 @RequestMapping("/api/empresas")
-@CrossOrigin
+@CrossOrigin(value = "http://localhost:8100")
 public class EmpresasController {
 
 	@Autowired
