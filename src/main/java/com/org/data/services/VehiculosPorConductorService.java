@@ -44,7 +44,7 @@ public class VehiculosPorConductorService implements IVehiculosPorConductorServi
 			
 		}catch(Exception ex) {
 		   base.code = "0";
-		    base.message = "Ha ocurrido un error al intentar guardar el registro, por favor intente mas tarde";
+		    base.message = ex.getMessage();
 			   
 		}
 		return base; 
