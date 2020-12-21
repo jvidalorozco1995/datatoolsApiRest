@@ -22,14 +22,14 @@ public class AsignarVehiculosDto {
 	public String getIdVehiculo() {
 		return idvehiculo;
 	}
-	public void setIdVehiculo(String idVehiculo) {
-		this.idvehiculo = idVehiculo;
+	public void setIdVehiculo(String idvehiculo) {
+		this.idvehiculo = idvehiculo;
 	}
 	public String getIdConductor() {
 		return idconductor;
 	}
-	public void setIdConductor(String idConductor) {
-		this.idconductor = idConductor;
+	public void setIdConductor(String idconductor) {
+		this.idconductor = idconductor;
 	}
 	private String idvehiculo;
 	private String idconductor;
