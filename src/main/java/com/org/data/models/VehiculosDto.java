@@ -92,10 +92,10 @@ public UUID getId() {
 	public void setLinea(String linea) {
 		this.linea = linea;
 	}
-	public String getIdempresa() {
+	public UUID getIdempresa() {
 		return idempresa;
 	}
-	public void setIdempresa(String idempresa) {
+	public void setIdempresa(UUID idempresa) {
 		this.idempresa = idempresa;
 	}
 	public String getPlaca() {
@@ -120,7 +120,7 @@ private String motor;
   private String cantpuertas;
   private String marca;
   private String linea;
-  private String idempresa;
+  private UUID idempresa;
 
 
 }
