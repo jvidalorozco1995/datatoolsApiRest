@@ -15,8 +15,14 @@ public class EmpresasDto {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    public UUID id;
 	
+	public UUID getId() {
+		return id;
+	}
+	public void setId(UUID id) {
+		this.id = id;
+	}
 	public String getTipoDocumento() {
 		return tipoDocumento;
 	}
