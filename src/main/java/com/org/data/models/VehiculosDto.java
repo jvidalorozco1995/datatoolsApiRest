@@ -12,11 +12,15 @@ import javax.persistence.Table;
 @Table(name = "vehiculos")
 public class VehiculosDto {
 
-   public String getPlaca() {
-		return placa;
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
+
+public UUID getId() {
+		return id;
 	}
-	public void setPlaca(String placa) {
-		this.placa = placa;
+	public void setId(UUID id) {
+		this.id = id;
 	}
 	public String getMotor() {
 		return motor;
@@ -36,22 +40,48 @@ public class VehiculosDto {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-
+	public String getFechamatricula() {
+		return fechamatricula;
+	}
+	public void setFechamatricula(String fechamatricula) {
+		this.fechamatricula = fechamatricula;
+	}
 	public String getPasajeros() {
 		return pasajeros;
 	}
 	public void setPasajeros(String pasajeros) {
 		this.pasajeros = pasajeros;
 	}
-
-	
+	public int getCantsentados() {
+		return cantsentados;
+	}
+	public void setCantsentados(int cantsentados) {
+		this.cantsentados = cantsentados;
+	}
+	public int getCantpies() {
+		return cantpies;
+	}
+	public void setCantpies(int cantpies) {
+		this.cantpies = cantpies;
+	}
+	public String getPesoseco() {
+		return pesoseco;
+	}
+	public void setPesoseco(String pesoseco) {
+		this.pesoseco = pesoseco;
+	}
 	public String getPesobruto() {
 		return pesobruto;
 	}
 	public void setPesobruto(String pesobruto) {
 		this.pesobruto = pesobruto;
 	}
-
+	public int getCantpuertas() {
+		return cantpuertas;
+	}
+	public void setCantpuertas(int cantpuertas) {
+		this.cantpuertas = cantpuertas;
+	}
 	public String getMarca() {
 		return marca;
 	}
@@ -64,52 +94,18 @@ public class VehiculosDto {
 	public void setLinea(String linea) {
 		this.linea = linea;
 	}
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
-  public UUID getId() {
-		return id;
+	public String getIdempresa() {
+		return idempresa;
 	}
-	public void setId(UUID id) {
-		this.id = id;
+	public void setIdempresa(String idempresa) {
+		this.idempresa = idempresa;
 	}
-private String placa;
-  public String getFechamatricula() {
-	return fechamatricula;
-}
-public void setFechamatricula(String fechamatricula) {
-	this.fechamatricula = fechamatricula;
-}
-public int getCantsentados() {
-	return cantsentados;
-}
-public void setCantsentados(int cantsentados) {
-	this.cantsentados = cantsentados;
-}
-public int getCantpies() {
-	return cantpies;
-}
-public void setCantpies(int cantpies) {
-	this.cantpies = cantpies;
-}
-public String getPesoseco() {
-	return pesoseco;
-}
-public void setPesoseco(String pesoseco) {
-	this.pesoseco = pesoseco;
-}
-public int getCantpuertas() {
-	return cantpuertas;
-}
-public void setCantpuertas(int cantpuertas) {
-	this.cantpuertas = cantpuertas;
-}
-public String getIdempresa() {
-	return idempresa;
-}
-public void setIdempresa(String idempresa) {
-	this.idempresa = idempresa;
-}
+	public String getPlaca() {
+		return placa;
+	}
+	public void setPlaca(String placa) {
+		this.placa = placa;
+	}
 private String motor;
   private String chasis;
   private String modelo;
@@ -123,11 +119,6 @@ private String motor;
   private String marca;
   private String linea;
   private String idempresa;
-  public String getIdEmpresa() {
-	return idempresa;
-}
-public void setIdEmpresa(String idEmpresa) {
-	this.idempresa = idEmpresa;
-}
-	
+  private String placa;
+
 }

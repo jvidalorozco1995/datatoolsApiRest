@@ -17,28 +17,29 @@ public class EmpresasDto {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public UUID id;
 	
+
 	public UUID getId() {
 		return id;
 	}
 	public void setId(UUID id) {
 		this.id = id;
 	}
-	public String gettipodocumento() {
+	public String getTipodocumento() {
 		return tipodocumento;
 	}
-	public void settipodocumento(String tipodocumento) {
+	public void setTipodocumento(String tipodocumento) {
 		this.tipodocumento = tipodocumento;
 	}
-	public String getnumeroDocumento() {
+	public String getNumerodocumento() {
 		return numerodocumento;
 	}
-	public void setnumeroDocumento(String numeroDocumento) {
-		this.numerodocumento = numeroDocumento;
+	public void setNumerodocumento(String numerodocumento) {
+		this.numerodocumento = numerodocumento;
 	}
-	public String getnombre() {
+	public String getNombre() {
 		return nombre;
 	}
-	public void setnombre(String nombre) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	public String getDireccion() {
@@ -71,16 +72,16 @@ public class EmpresasDto {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public String gettipoDocumentorepLegal() {
+	public String getTipodocumentoreplegal() {
 		return tipodocumentoreplegal;
 	}
-	public void settipodocumentorepLegal(String tipoDocumentoreplegal) {
-		this.tipodocumentoreplegal = tipoDocumentoreplegal;
+	public void setTipodocumentoreplegal(String tipodocumentoreplegal) {
+		this.tipodocumentoreplegal = tipodocumentoreplegal;
 	}
-	public String getnumerodocumentoRepLegal() {
+	public String getNumerodocumentoreplegal() {
 		return numerodocumentoreplegal;
 	}
-	public void setnumerodocumentorepLegal(String numerodocumentoreplegal) {
+	public void setNumerodocumentoreplegal(String numerodocumentoreplegal) {
 		this.numerodocumentoreplegal = numerodocumentoreplegal;
 	}
 	public String getNombres() {
@@ -89,11 +90,11 @@ public class EmpresasDto {
 	public void setNombres(String nombres) {
 		this.nombres = nombres;
 	}
-	public String getTelefonoRepLegal() {
+	public String getTelefonoreplegal() {
 		return telefonoreplegal;
 	}
-	public void settelefonoreplegal(String telefonoRepLegal) {
-		this.telefonoreplegal = telefonoRepLegal;
+	public void setTelefonoreplegal(String telefonoreplegal) {
+		this.telefonoreplegal = telefonoreplegal;
 	}
 	private String tipodocumento; 
 	private String numerodocumento;
