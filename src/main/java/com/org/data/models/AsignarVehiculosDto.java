@@ -19,18 +19,20 @@ public class AsignarVehiculosDto {
 	public void setId(UUID id) {
 		this.id = id;
 	}
-	public UUID getIdVehiculo() {
+	
+	public UUID getIdvehiculo() {
 		return idvehiculo;
 	}
-	public void setIdVehiculo(UUID idvehiculo) {
+	public void setIdvehiculo(UUID idvehiculo) {
 		this.idvehiculo = idvehiculo;
 	}
-	public UUID getIdConductor() {
+	public UUID getIdconductor() {
 		return idconductor;
 	}
-	public void setIdConductor(UUID idconductor) {
+	public void setIdconductor(UUID idconductor) {
 		this.idconductor = idconductor;
 	}
+
 	private UUID idvehiculo;
 	private UUID idconductor;
 }
