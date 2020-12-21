@@ -93,7 +93,13 @@ public class VehiculosDto {
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-  private String placa;
+  public UUID getId() {
+		return id;
+	}
+	public void setId(UUID id) {
+		this.id = id;
+	}
+private String placa;
   private String motor;
   private String chasis;
   private String modelo;
