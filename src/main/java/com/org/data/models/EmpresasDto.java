@@ -23,22 +23,22 @@ public class EmpresasDto {
 	public void setId(UUID id) {
 		this.id = id;
 	}
-	public String getTipoDocumento() {
-		return tipoDocumento;
+	public String gettipodocumento() {
+		return tipodocumento;
 	}
-	public void setTipoDocumento(String tipoDocumento) {
-		this.tipoDocumento = tipoDocumento;
+	public void settipodocumento(String tipodocumento) {
+		this.tipodocumento = tipodocumento;
 	}
-	public String getNumeroDocumento() {
-		return numeroDocumento;
+	public String getnumeroDocumento() {
+		return numerodocumento;
 	}
-	public void setNumeroDocumento(String numeroDocumento) {
-		this.numeroDocumento = numeroDocumento;
+	public void setnumeroDocumento(String numeroDocumento) {
+		this.numerodocumento = numeroDocumento;
 	}
-	public String getNombre() {
+	public String getnombre() {
 		return nombre;
 	}
-	public void setNombre(String nombre) {
+	public void setnombre(String nombre) {
 		this.nombre = nombre;
 	}
 	public String getDireccion() {
@@ -71,17 +71,17 @@ public class EmpresasDto {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public String getTipoDocumentoRepLegal() {
-		return tipoDocumentoRepLegal;
+	public String gettipoDocumentorepLegal() {
+		return tipodocumentoreplegal;
 	}
-	public void setTipoDocumentoRepLegal(String tipoDocumentoRepLegal) {
-		this.tipoDocumentoRepLegal = tipoDocumentoRepLegal;
+	public void settipodocumentorepLegal(String tipoDocumentoreplegal) {
+		this.tipodocumentoreplegal = tipoDocumentoreplegal;
 	}
-	public String getNumeroDocumentoRepLegal() {
-		return numeroDocumentoRepLegal;
+	public String getnumerodocumentoRepLegal() {
+		return numerodocumentoreplegal;
 	}
-	public void setNumeroDocumentoRepLegal(String numeroDocumentoRepLegal) {
-		this.numeroDocumentoRepLegal = numeroDocumentoRepLegal;
+	public void setnumerodocumentorepLegal(String numerodocumentoreplegal) {
+		this.numerodocumentoreplegal = numerodocumentoreplegal;
 	}
 	public String getNombres() {
 		return nombres;
@@ -90,21 +90,21 @@ public class EmpresasDto {
 		this.nombres = nombres;
 	}
 	public String getTelefonoRepLegal() {
-		return telefonoRepLegal;
+		return telefonoreplegal;
 	}
-	public void setTelefonoRepLegal(String telefonoRepLegal) {
-		this.telefonoRepLegal = telefonoRepLegal;
+	public void settelefonoreplegal(String telefonoRepLegal) {
+		this.telefonoreplegal = telefonoRepLegal;
 	}
-	private String tipoDocumento; 
-	private String numeroDocumento;
+	private String tipodocumento; 
+	private String numerodocumento;
 	private String nombre; 
 	private String direccion; 
 	private String ciudad;
 	private String departamento;
 	private String pais; 
 	private String telefono; 
-	private String tipoDocumentoRepLegal; 
-	private String numeroDocumentoRepLegal; 
+	private String tipodocumentoreplegal; 
+	private String numerodocumentoreplegal; 
 	private String nombres;
-	private String telefonoRepLegal;
+	private String telefonoreplegal;
 }

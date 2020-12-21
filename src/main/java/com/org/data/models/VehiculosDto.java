@@ -36,48 +36,22 @@ public class VehiculosDto {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	public String getFechaMatricula() {
-		return fechaMatricula;
-	}
-	public void setFechaMatricula(String fechaMatricula) {
-		this.fechaMatricula = fechaMatricula;
-	}
+
 	public String getPasajeros() {
 		return pasajeros;
 	}
 	public void setPasajeros(String pasajeros) {
 		this.pasajeros = pasajeros;
 	}
-	public int getCantSentados() {
-		return cantSentados;
-	}
-	public void setCantSentados(int cantSentados) {
-		this.cantSentados = cantSentados;
-	}
-	public int getCantPies() {
-		return cantPies;
-	}
-	public void setCantPies(int cantPies) {
-		this.cantPies = cantPies;
-	}
-	public String getPesoSeco() {
-		return pesoSeco;
-	}
-	public void setPesoSeco(String pesoSeco) {
-		this.pesoSeco = pesoSeco;
-	}
+
+	
 	public String getPesobruto() {
 		return pesobruto;
 	}
 	public void setPesobruto(String pesobruto) {
 		this.pesobruto = pesobruto;
 	}
-	public int getCantPuertas() {
-		return cantPuertas;
-	}
-	public void setCantPuertas(int cantPuertas) {
-		this.cantPuertas = cantPuertas;
-	}
+
 	public String getMarca() {
 		return marca;
 	}
@@ -100,16 +74,52 @@ public class VehiculosDto {
 		this.id = id;
 	}
 private String placa;
-  private String motor;
+  public String getFechamatricula() {
+	return fechamatricula;
+}
+public void setFechamatricula(String fechamatricula) {
+	this.fechamatricula = fechamatricula;
+}
+public int getCantsentados() {
+	return cantsentados;
+}
+public void setCantsentados(int cantsentados) {
+	this.cantsentados = cantsentados;
+}
+public int getCantpies() {
+	return cantpies;
+}
+public void setCantpies(int cantpies) {
+	this.cantpies = cantpies;
+}
+public String getPesoseco() {
+	return pesoseco;
+}
+public void setPesoseco(String pesoseco) {
+	this.pesoseco = pesoseco;
+}
+public int getCantpuertas() {
+	return cantpuertas;
+}
+public void setCantpuertas(int cantpuertas) {
+	this.cantpuertas = cantpuertas;
+}
+public String getIdempresa() {
+	return idempresa;
+}
+public void setIdempresa(String idempresa) {
+	this.idempresa = idempresa;
+}
+private String motor;
   private String chasis;
   private String modelo;
-  private String fechaMatricula;
+  private String fechamatricula;
   private String pasajeros;
-  private int cantSentados;
-  private int cantPies;
-  private String pesoSeco;
+  private int cantsentados;
+  private int cantpies;
+  private String pesoseco;
   private String pesobruto;
-  private int cantPuertas;
+  private int cantpuertas;
   private String marca;
   private String linea;
   private String idempresa;

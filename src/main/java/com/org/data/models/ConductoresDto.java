@@ -22,18 +22,7 @@ public class ConductoresDto {
 	public void setId(UUID id) {
 		this.id = id;
 	}
-	public String getTipoDocumento() {
-		return tipoDocumento;
-	}
-	public void setTipoDocumento(String tipoDocumento) {
-		this.tipoDocumento = tipoDocumento;
-	}
-	public String getNumeroDocumento() {
-		return numeroDocumento;
-	}
-	public void setNumeroDocumento(String numeroDocumento) {
-		this.numeroDocumento = numeroDocumento;
-	}
+
 	public String getNombres() {
 		return nombres;
 	}
@@ -70,8 +59,20 @@ public class ConductoresDto {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	private String tipoDocumento;
-	private String numeroDocumento;
+	public String getTipodocumento() {
+		return tipodocumento;
+	}
+	public void setTipodocumento(String tipodocumento) {
+		this.tipodocumento = tipodocumento;
+	}
+	public String getNumerodocumento() {
+		return numerodocumento;
+	}
+	public void setNumerodocumento(String numerodocumento) {
+		this.numerodocumento = numerodocumento;
+	}
+	private String tipodocumento;
+	private String numerodocumento;
 	private String nombres;
 	private String direccion;
 	private String ciudad;
