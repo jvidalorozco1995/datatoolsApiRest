@@ -20,18 +20,18 @@ public class AsignarVehiculosDto {
 		this.id = id;
 	}
 	public String getIdVehiculo() {
-		return idVehiculo;
+		return idvehiculo;
 	}
 	public void setIdVehiculo(String idVehiculo) {
-		this.idVehiculo = idVehiculo;
+		this.idvehiculo = idVehiculo;
 	}
 	public String getIdConductor() {
-		return idConductor;
+		return idconductor;
 	}
 	public void setIdConductor(String idConductor) {
-		this.idConductor = idConductor;
+		this.idconductor = idConductor;
 	}
-	private String idVehiculo;
-	private String idConductor;
+	private String idvehiculo;
+	private String idconductor;
 }
 //todo
