@@ -18,7 +18,7 @@ import com.org.data.services.VehiculosPorConductorService;
 
 
 @RestController()
-@RequestMapping("/api/asignarVehiculos")
+
 @CrossOrigin
 public class AsignarVehiculosController {
 
@@ -26,7 +26,7 @@ public class AsignarVehiculosController {
     public VehiculosPorConductorService cservice;
 
  
-    @PostMapping("")
+    @PostMapping("/api/asignarVehiculos")
     public BaseResponse newConductor(@RequestBody AsignarVehiculosDto conductor) {
     	 BaseResponse response = new BaseResponse();
         if(conductor != null) {
@@ -39,4 +39,19 @@ public class AsignarVehiculosController {
             return response; 
         }
     }
+    
+    @PostMapping("/api/desaFiliarVehiculos")
+    public BaseResponse desaFiliarVehiculo(@RequestBody AsignarVehiculosDto conductor) {
+    	 BaseResponse response = new BaseResponse();
+        if(conductor != null) {
+        	return cservice.desaFiliarVehiculo(conductor);
+        	
+        } else {
+        	
+        	response.code = "0";
+        	response.message = "Los campos estan vacios";
+            return response; 
+        }
+    }
+
 }

@@ -23,6 +23,8 @@ public class VehiculosPorConductorService implements IVehiculosPorConductorServi
     @Autowired
     private VehiculosAsignadosRepository repositoryAsignados;
 
+    @Autowired
+    private VehiculosRepository repositoryVehiculos;
   
 	@Override
 	public 	List<VehiculosPorConductorDto> obtenerVehiculosPorConductor() {
@@ -45,6 +47,24 @@ public class VehiculosPorConductorService implements IVehiculosPorConductorServi
 		}catch(Exception ex) {
 		   base.code = "0";
 		    base.message = ex.getMessage();
+			   
+		}
+		return base; 
+	}
+	
+	@Override
+	public BaseResponse desaFiliarVehiculo(AsignarVehiculosDto vehi) {
+	   BaseResponse base = new BaseResponse();
+		try {
+		   repositoryAsignados.delete((vehi.getId()));	
+		   //repositoryVehiculos.delete(vehi.getIdvehiculo());;
+		   base.code = "1";
+		   base.message = "Desafiliado satisfactoriamente";
+		   
+			
+		}catch(Exception ex) {
+		   base.code = "0";
+		   base.message = ex.getMessage();
 			   
 		}
 		return base; 

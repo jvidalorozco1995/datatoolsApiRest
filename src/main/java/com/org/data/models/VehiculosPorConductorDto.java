@@ -1,5 +1,7 @@
 package com.org.data.models;
 
+import java.util.UUID;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -45,7 +47,22 @@ public class VehiculosPorConductorDto {
 		this.nombres = nombres;
 	}
 	@Id
-private String id;
+   private String id;
+  
+   public UUID getIdvehiculo() {
+		return idvehiculo;
+	}
+	public void setIdvehiculo(UUID idvehiculo) {
+		this.idvehiculo = idvehiculo;
+	}
+	public UUID getIdconductor() {
+		return idconductor;
+	}
+	public void setIdconductor(UUID idconductor) {
+		this.idconductor = idconductor;
+	}
+private UUID idvehiculo;
+   private UUID idconductor;
    private String placa;
    private String tipodocumento;
    private String numerodocumento;

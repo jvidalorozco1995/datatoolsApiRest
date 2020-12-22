@@ -11,4 +11,5 @@ import com.org.data.models.VehiculosDto;
 public interface IVehiculosService {
 	List<VehiculosDto> findAll();
 	BaseResponse create(VehiculosDto vehiculo);
+	
 }

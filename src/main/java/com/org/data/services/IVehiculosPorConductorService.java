@@ -9,4 +9,5 @@ import com.org.data.models.VehiculosPorConductorDto;
 public interface IVehiculosPorConductorService {
 	List<VehiculosPorConductorDto> obtenerVehiculosPorConductor();
 	BaseResponse create(AsignarVehiculosDto vehi);
+	BaseResponse desaFiliarVehiculo(AsignarVehiculosDto vehi);
 }
